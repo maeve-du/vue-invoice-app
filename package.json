@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "firebase": "^8.0.0",
+    "uid": "^2.0.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
@@ -36,7 +38,15 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "no-unused-vars": "warn",
+      "vue/no-unused-components": [
+        "warn",
+        {
+          "ignoreWhenBindingPresent": false
+        }
+      ]
+    }
   },
   "browserslist": [
     "> 1%",
